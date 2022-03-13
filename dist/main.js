@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("bueeeehh"),document.innerHTML='\n     <div>\n\n     <div>\n     <p>ADVICE #177</p>\n     <p id="quotes"></p>\n\n     \n     </div>\n     \n     </div>\n    \n    '})();
