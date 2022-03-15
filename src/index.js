@@ -1,4 +1,5 @@
 import render from './../src/utils/view.js'
+import './css/tailwind.css'
 
 //const urlApi = "https://api.adviceslip.com/advice"
 
