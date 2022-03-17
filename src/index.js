@@ -1,9 +1,7 @@
 import render from '@utils/view.js'
-import '../src/css/tailwind.css'
+import '@style/tailwind.css'
 import '@utils/getData.js'
-import fetchData from '../src/utils/getData.js'
-
-
+import fetchData from '@utils/getData.js'
 
 
 render()

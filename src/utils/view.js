@@ -1,6 +1,6 @@
-import mobile from '/assets/images/pattern-divider-mobile.svg'
-import desktop from '/assets/images/pattern-divider-desktop.svg'
-import iconDice from '/assets/images/icon-dice.svg'
+import mobile from '@images/pattern-divider-mobile.svg'
+import desktop from '@images/pattern-divider-desktop.svg'
+import iconDice from '@images/icon-dice.svg'
 
 
 const isMobile = screen.width == 360

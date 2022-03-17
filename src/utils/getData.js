@@ -9,15 +9,10 @@ const fetchData = async() => {
         const api = await apidata.json()
         let quotes = api.slip.advice
         document.getElementById("quotes").innerHTML = `${quotes}`
-        console.log(quotes, "apiiiiii")
-
-
 
     } catch (e) {
         console.log(e)
     }
-
-    console.log(quotes, "frases")
 
 }
 

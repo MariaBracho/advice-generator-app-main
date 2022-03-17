@@ -58,7 +58,7 @@ module.exports = (env, argv) => {
             alias: {
                 '@images': path.resolve(__dirname, './assets/images/'),
                 '@utils': path.resolve(__dirname, './src/utils/'),
-                'style': path.resolve(__dirname, './src/css')
+                '@style': path.resolve(__dirname, './src/css/')
             }
         },
         module: { rules },
