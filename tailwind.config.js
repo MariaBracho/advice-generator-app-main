@@ -19,6 +19,12 @@ module.exports = {
         },
         fontFamily: {
             Manrope: ['Manrope', 'sans-serif']
+        },
+        letterSpacing: {
+            widest: '.25em',
+        },
+        dropShadow: {
+            '3xl': '0px 0px 25px rgba(81, 255, 168)',
         }
     },
 

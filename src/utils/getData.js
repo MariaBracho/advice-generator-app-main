@@ -2,8 +2,6 @@ const API = process.env.API
 
 const urlApi = "https://api.adviceslip.com/advice"
 
-console.log("holaaa")
-
 const fetchData = async() => {
 
     try {

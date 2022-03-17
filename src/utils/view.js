@@ -1,26 +1,33 @@
-console.log("bueeeehh")
+import mobile from '/assets/images/pattern-divider-mobile.svg'
+import desktop from '/assets/images/pattern-divider-desktop.svg'
+import iconDice from '/assets/images/icon-dice.svg'
+
+
+const isMobile = screen.width == 360
 
 const render = () => {
     document.getElementById("root").innerHTML = `
     <div class="w-full h-screen bg-Dark_Blue flex justify-center items-center  ">
     
-     <div class="text-center relative font-Manrope rounded-xl bg-Dark_Grayish_Blue w-5/6 h-1/2 " >
+     <div class="text-center  relative font-Manrope rounded-xl bg-Dark_Grayish_Blue w-11/12 h-auto max-w-xl" >
+     
+     <div class="w-full h-full py-10 px-8 ">
 
-     <p class="text-Neon_Green text-sm " >ADVICE #177</p>
-     <p class="text-Light_Cyan text-3xl"id="quotes"></p>
+    
+     <p class="text-Neon_Green text-sm inline-block h-5 tracking-widest " >ADVICE #177</p>
      
-     
-     <div class=" h-3 w-40 "> </div>
-     
+     <p class="text-Light_Cyan my-auto text-2xl flex justify-center items-center h-60 "id="quotes"></p>
+
+     <img class="mb-7 mx-auto " src="${isMobile? mobile:desktop}">
+
+
+     </div>
+
      <div class="w-full absolute -bottom-6 mx-auto  ">
-     <button class="h-16 w-16  bg-Neon_Green rounded-full cursor-pointer" id="button">button</button>
+     <button class="h-16 w-16  bg-Neon_Green rounded-full border-none outline-none cursor-pointer hover:drop-shadow-3xl " id="button"><img class="mx-auto" src="${iconDice}"></button>
      </div>
      
-     
-     
 
-     
-     
      </div>
      </div>
     
