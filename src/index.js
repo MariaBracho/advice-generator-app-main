@@ -7,6 +7,7 @@ import fetchData from '../src/utils/getData.js'
 
 
 render()
+fetchData()
 
 document.getElementById("button").addEventListener("click", () => {
     fetchData()
