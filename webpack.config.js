@@ -43,15 +43,14 @@ const rules = [javasScriptRules, styleRules, imgRules, fontsRules]
 module.exports = (env, argv) => {
     const { mode } = argv
     const isproduction = mode === 'production'
-
-
+    
     return {
         entry: "./src/index.js",
         output: {
             path: path.resolve(__dirname, "dist"),
-            filename: isproduction ? "[name].[contenthash].js" : 'main.js',
+            filename: 'main.js',
             assetModuleFilename: 'images/[hash][ext][query]',
-            clean: isproduction ? true : false,
+            clean: isproduction ? false: true,
         },
         resolve: {
             extensions: [".js"],
@@ -80,7 +79,7 @@ module.exports = (env, argv) => {
 
             }),
             new Dotenv(),
-            new ProgressPlugin(isproduction ? true : false),
+            new ProgressPlugin(isproduction),
         ],
         optimization: {
             minimize: isproduction ? true : false,
@@ -92,3 +91,4 @@ module.exports = (env, argv) => {
 
     }
 }
+
